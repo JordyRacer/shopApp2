@@ -1,0 +1,104 @@
+<section class="heroaboutus">
+      <header>
+        <div class="wrapper">
+          <a href="#"><img src="assets/img/logo.png" class="logo" alt="" title=""/></a>
+          <a href="#" class="hamburger"></a>
+          <nav>
+            <ul>
+              <li><a ui-sref="vinyl">Vinyl</a></li>
+              <li><a ui-sref="about_us">About</a></li>
+              <li><a ui-sref="contact_us">Contact</a></li>
+              <li><a href="cart.html" class="cartlogo"><i class="fa fa-shopping-cart fa-2x"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+​
+          <section class="caption">
+          <h2 class="caption">Checkout </h2>
+          <h3 class="properties">Time to pay us!  </h3>
+​
+          <!--  end header section  -->
+      </section>
+  </section>
+​
+    
+<section class="listings">
+    <div class="wrapper">
+      <div> <h1 class="text-center">Shopping Cart</h1></div>
+​
+        <div class="row">
+                <div class="checkoutHolderBox col-md-12">
+​
+                    <table class="table">
+                   <tr>
+                            <th>Record</th>
+                            <th></th></br>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                        <tr ng-repeat="product in ctrl.cartStatus track by product.id">
+                            <td>{{product.name}}</td>        
+                            <td><img src="{{product.image}}" width="25" height="25"></td>
+                            <td>{{product.price | currency}}</td>
+                            <td>
+                            <input type="number" ng-model="product.quantity" ng-click="ctrl.try(product, product.quantity)" style="text-align:center;"/>   
+                            </td>
+                            <td>{{ctrl.albumTotal(product.quantity, product.price) | currency}}</td>
+                            <td align="center">[<a ng-click="ctrl.deleteitem(product)" >x</a>]</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><b>Subtotal:<b></td>
+                            <td><b>{{ctrl.total | currency}}</b></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><b>Taxes @ 13%<b></td>
+                            <td><b>{{ctrl.tax | currency}}</b><td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><b>TOTAL DUE:</b></td>
+                            <td><b>{{ctrl.finalTotal | currency}}</b><td>
+                        </tr>
+                    </table>
+​
+
+                   <section class="listings">
+                      <div class="more_listing"><button ng-click="ctrl.stripePaymentHandler()" class="more_listing_btn">Submit Order</button><br></div>
+                  </section>
+              </div>
+          
+      </div>
+    </div>
+    
+</section>
+​
+<footer>
+    
+      <div class=" footer">
+          
+          <ul>
+            <li><p>460 King St. West, Toronto, Ontario</p></li>
+            <li><a href="mailto:someone@example.com?Subject=Hey%20Ryan%20Whats%20Up" target="_top"><p>info@ryansrecords.com</p></a></li>
+            <li><p>Copyright © 2015 Ryan Records All Rights Reserved.</p></li>
+            <li><a target="_blank" class="ph_link" ui-sref="auth">Admin</a></li>
+          </ul>
+    </div>
+  </footer>
+
+  <!--  end footer  -->
+​
+​
+</body>
+
+   

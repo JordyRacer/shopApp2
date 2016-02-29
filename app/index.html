@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"
+         async defer></script>
+	<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script src="https://checkout.stripe.com/checkout.js"></script>
+	<script type="text/javascript" src="site/controllers/song.ctrl.js"></script>
+	<script type="text/javascript" src="site/controllers/auth.ctrl.js"></script>
+	<script type="text/javascript" src="site/controllers/cart.ctrl.js"></script>
+	<script type="text/javascript" src="site/controllers/prdt.ctrl.js"></script>
+	<script type="text/javascript" src="site/controllers/aboutus.ctrl.js"></script>
+	<script type="text/javascript" src="site/controllers/login.ctrl.js"></script>
+
+	<script type="text/javascript" src="site/services/products.srv.js"></script>
+	<script type="text/javascript" src="site/services/songs.srv.js"></script>
+	<script type="text/javascript" src="site/services/api.srv.js"></script>
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<!--Soundcloud player-->
+
+	<script type="text/javascript" src="assets/js/vendor/soundcloud.player.api.js"></script>
+<script type="text/javascript">
+   soundcloud.addEventListener('onPlayerReady', function(player, data) {
+     player.api_play();
+   });
+</script>
+
+	<!--Soundcloud player-->
+
+	
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+
+	<!-- for prdt_mgmt: Bootstrap,  CSS -->
+	<link href="assets/css/vendor/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
+	<link href="assets/css/vendor/prdt_mgmt.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	
+	<link rel="stylesheet" href="assets/css/vendor/auth.css">
+		
+	<!-- stylesheets important keep wher ethey are becauce of positioning specific settings -->
+
+	<link rel="stylesheet" type="text/css" href="assets/css/vendor/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/vendor/responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+
+
+
+</head>
+
+<body ng-app="shopApp">
+
+
+
+	
+	<div ui-view></div>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'impact_label_reversedregular';
+    src: url('../../../assets/fonts/Impact_Label_Reversed-webfont.eot');
+    src: url('../../../assets/fonts/Impact_Label_Reversed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../assets/fonts/Impact_Label_Reversed-webfont.woff') format('woff'),
+         url('../../../assets/fonts/Impact_Label_Reversed-webfont.ttf') format('truetype'),
+         url('../../../assets/fonts/Impact_Label_Reversed-webfont.svg#impact_label_reversedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #626262;
+    font-family: "impact_label_reversedregular", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;}
+
+header {
+    width: 100%;
+    height: 100px;
+    background:  rgba(0, 0, 0, 0.5);
+}
+
+header .logo {
+    margin-top: -40px;
+    float: left;
+    position: absolute;
+    top: 10%;
+    left: -15%;    
+    /*width: 120px;
+    height: 120px;*/
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+}
+
+.listings {
+    padding: 30px 0;
+}
+
+.iframeClass {
+    
+    margin-top: -30px;
+}
+
+/*Vinyl partial*/
+
+
+.categories{
+
+font-family: "impact_label_reversedregular", Helvetica, Arial, sans-serif;
+margin: 0 auto;
+text-align: center;
+width: 200px;
+font-size: 16px;
+
+}
+
+/*  Hero Section  */
+
+.caption, .herovinyl .caption, .heroaboutus .caption, .herocontact .caption{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    margin-top: -105px;
+}
+
+.caption h2, .herovinyl .caption h2, .heroaboutus .caption h2, .herocontact .caption h2{
+    color: #fff;
+    font-family: "impact_label_reversedregular";
+    font-size: 80px;
+    font-weight: lighter;
+    margin-top: 40px;
+    position: relative;
+    display: block;
+}
+
+.caption h3, .herovinyl .caption h3, .heroaboutus .caption h3, .herocontact .caption h3{
+    color: #fff;
+    font-family: "impact_label_reversedregular";
+    font-size: 14px;
+    margin: -25px 0 0 25px;
+    left: 1px;
+}
+
+/*aboutus partial*/
+
+.heroaboutus{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: url('../img/aboutushero.jpg') no-repeat bottom center;
+    background-size: cover;
+    margin-bottom: 20px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.list-inline{
+    display: inline-block;
+    padding-left: 10px;
+
+
+}
+
+.list-inline li{
+
+     padding-left: 90px;
+}
+
+
+.imageholder{
+
+    width:900px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+
+/*contact partial*/
+
+.herocontact{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: url('../img/contacthero.jpg') no-repeat bottom center;
+    background-size: cover;
+    margin-bottom: 20px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.hero {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    margin-bottom: 20px;
+    background: url('../img/hero.jpg') no-repeat bottom center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+.herovinyl{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: url('../img/vinylheroimage.jpg') no-repeat bottom center;
+    background-size: cover;
+    margin-bottom: -20px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#map p {
+		position: relative;
+        width: 500px;
+        height: 400px;
+        background-color: #CCC;}
+        
+
+
+#map-container p {
+	font-family: "impact_label_reversedregular";
+}
+
+#map-container {
+	float: right;
+	}
+
+#shop-image{
+	width: 100%;
+	height: 500px;
+	background: url('../img/aboutushero.jpg') no-repeat bottom center;
+    background-size: cover;
+
+}
+
+#pformat p{
+
+	font-family: "impact_label_reversedregular";
+ 
+}
+
+
+/* main nav cart logo */
+
+nav .right-nav {
+    float: right;
+    margin: 0px 70px 0px 0px;
+    vertical-align: top;
+}
+
+nav .cartlogo{
+      width: 20px;
+        height: 20px
+        float: right;
+        margin: 30px 0 0 50px;
+        
+        background: transparent;
+
+        transition: background .1s linear;
+        -webkit-transition: background .1s linear;
+        -moz-transition: background .1s linear;
+        -o-transition: background .1s linear;
+}
+
+nav a:hover{
+    color:#81B5B5;
+    text-decoration: underline;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 28px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Checkout page */
+
+.checkoutHolder{
+    width: 0px;
+    height: 300px;
+    display: inline-block;
+    text-align: left;
+    padding: 20px ;
+    margin-top: 0px;
+    color: #fff;
+    font-family: "impact_label_reversedregular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: .5px;
+    border: 1px solid #000000;
+
+}
+
+.checkoutHolderBox{   
+/*    height: 300px; 
+*/   /* text-align: center;*/
+    padding: 20px ;
+    margin-top: 0px;
+    color: #000;
+    font-family: "impact_label_reversedregular", Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    letter-spacing: .3px;
+    border: 1px solid #000000;
+}
+
+.checkoutHolder h2 p{
+
+    max-width: 200px;
+}
+
+/*footer */
+
+footer {
+    display: block;
+    text-align: center;
+    padding: 40px 0;
+    color: #fff;
+    font-family: "impact_label_reversedregular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: .5px;
+    border-top: 1px solid #82abd4;
+}
+
+
+

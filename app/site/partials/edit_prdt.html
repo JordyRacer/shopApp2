@@ -1,0 +1,48 @@
+<div id="wrapper">
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+					<h2>
+					Edit Existing Product
+					</h2>
+				<form name="addProduct" class="" ng-submit="ctrl.addProduct()" novalidate>
+					<div>
+						<label>Name</label>
+						<input type="text" name="name" ng-model="ctrl.product.name" required>
+					</div>
+					<div>
+						<label>Image</label>
+						<input type="text" name="image" ng-model="ctrl.product.image" required>
+					</div>
+					<div>
+						<label>Description</label>
+						<textarea ng-model="ctrl.product.description"></textarea>
+					</div>
+					<div>
+						<label>Category</label>
+						<select ng-options="option.value as option.label for option in ctrl.categories" ng-model="ctrl.product.category" name="category">
+						</select>
+					</div>
+					<div>
+						<label>Price</label>
+						<input type="number" name="price" ng-model="ctrl.product.price" required>
+					</div>
+					<div>
+						<label>Quantity</label>
+						<input type="number" name="quantity" ng-model="ctrl.product.quantity" required>
+					</div>
+			<div>
+				<button type="submit" ng-click="ctrl.updateProduct()">update</button>
+			</div>
+
+			</section>
+			</div>
+		</div>
+	</div>
+</div>
+
+			</section>
+			</div>
+		</div>
+	</div>
+</div>

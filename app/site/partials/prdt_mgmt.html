@@ -1,0 +1,30 @@
+<!-- add new item
+edit or delete ng-repeat item
+logout -->
+
+<div id="page-content-wrapper">
+
+    <div>
+    <h1>Product Management Panel</h1>
+    </div>
+    <div>     
+        <table class="" style="width:100%">
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Quantity</th>
+            </tr>
+            <tr ng-repeat="product in ctrl.products">
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.quantity}}</td>
+                <td>{{product.category}}</td>
+                <td><a ng-click="ctrl.editProduct(product)">Edit</a></td>
+                <td><a ng-click="ctrl.deleteProduct(product.id)">Delete</a></td>
+            </tr>
+        </table>
+    </div>  
+    
+</div>
+
